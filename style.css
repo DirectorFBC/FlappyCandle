@@ -94,14 +94,13 @@ h1 {
     }
 }
 
-/* Additional styles for the header content */
-.ca-content-wrapper {
+.copy-text {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(116, 116, 116, 0.7);
     border: 3px solid #ff5900;
     border-radius: 10px;
     margin: 10px;
@@ -118,26 +117,34 @@ h1 {
     font-size: 25px;
 }
 
-#contract-address-text {
+.copy-text code.text {
     color: white;
-    font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-.copy-icon {
-    background: none;
+    font-size: 25px;
+    padding: 10px;
     border: none;
-    color: #FFD700;
-    cursor: pointer;
-    font-size: 16px;
-    padding: 5px;
+    outline: none;
 }
 
-.copy-icon:hover {
-    color: #FFFFFF;
+.copy-text button {
+    padding: 10px;
+    background: #ff5900;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    outline: none;
+    border-radius: 10px;
 }
+
+.copy-text button:hover {
+    background: #fc8b4e;
+}
+
+.copy-text button:active {
+    background: white;
+    color: black;
+}
+
 
 /* Center the game title */
 h1 {
