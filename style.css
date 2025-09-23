@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'FlappyBirdFont';
+    src: url(BotsmaticDemo-MXOr.ttf) format('truetype');
+}
+
+/* style.css */
+body {
+    background-image: url('img/backgroundCandle.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* background: linear-gradient(to bottom, #252525, #000000); */
+    font-family: 'Teko', sans-serif;
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 10px;
+    z-index: 10;
+}
+
+h1 {
+    font-size: 20px;
+    color: #ff5900;
+    text-shadow: 3px 3px 0 #8B0000, 5px 5px 0 #000;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.game-container {
+    position: relative;
+    width: 640px;
+    height: 100%;
+    border-radius: 0px;
+    overflow: hidden;
+}
+
+#bird {
+    position: relative;
+    left: 77px;
+    display: block;
+    width: 66%;
+    height: auto;
+    border: 30px solid #ff5900;
+    box-shadow: #000 0px 0px 300px;
+}
+
+.controls {
+    margin-top: 20px;
+    text-align: center;
+    color: #FFD700;
+    font-size: 20px;
+    text-shadow: 2px 2px 0 #000;
+}
+
+.instructions {
+    background-color: rgba(139, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    max-width: 400px;
+}
+
+@media (max-height: 700px) {
+    h1 {
+        font-size: 36px;
+    }
+    
+    .game-container {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 36px;
+    }
+    
+    .game-container {
+        max-width: 320px;
+    }
+    
+    .instructions {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+
+/* Additional styles for the header content */
+.ca-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 3px solid #ff5900;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.ca-label {
+    color: #FFD700;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#contract-address-text {
+    color: white;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.copy-icon {
+    background: none;
+    border: none;
+    color: #FFD700;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.copy-icon:hover {
+    color: #FFFFFF;
+}
+
+/* Center the game title */
+h1 {
+    text-align: center;
+    font-family: 'FlappyBirdFont', sans-serif;
+    font-size: 60px;
+}
