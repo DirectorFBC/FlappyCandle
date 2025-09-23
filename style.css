@@ -28,7 +28,7 @@ header {
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 10px;
     color: #ff5900;
     text-shadow: 3px 3px 0 #8B0000, 5px 5px 0 #000;
     margin: 0;
@@ -45,9 +45,9 @@ h1 {
 
 #bird {
     position: relative;
-    left: 77px;
+    left: 137px;
     display: block;
-    width: 66%;
+    width: 50%;
     height: auto;
     border: 30px solid #ff5900;
     box-shadow: #000 0px 0px 300px;
